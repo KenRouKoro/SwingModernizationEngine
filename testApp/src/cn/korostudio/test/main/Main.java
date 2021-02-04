@@ -16,6 +16,11 @@ public class Main extends Application {
 
     }
 
+    @Override
+    public void stop(){
+
+    }
+
     public static void main(String[] args) {
         try {
             start(Main.class);

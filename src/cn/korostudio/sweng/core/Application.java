@@ -3,8 +3,8 @@ package cn.korostudio.sweng.core;
 import cn.korostudio.sweng.data.Configuration;
 
 abstract public class Application {
-    //final public
     protected ApplicationCore applicationCore;
+    protected Application application=this;
 
     abstract public Configuration init();
 
@@ -13,12 +13,15 @@ abstract public class Application {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                application.applicationCore=new ApplicationCore(application.init());
+                application.applicationCore=new ApplicationCore(application.init(),application);
                 application.load();
+
             }
-        });
+        }).start();
     }
     abstract public void load();
+
+    public abstract void stop();
 
     public ApplicationCore getApplicationCore() {
         return applicationCore;
