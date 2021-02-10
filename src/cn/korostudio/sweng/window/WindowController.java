@@ -30,8 +30,13 @@ public class WindowController {
     //内部初始化方法
     private void init(){
         this.iswindow=conf.window;
-        if (iswindow)this.window=new JWindow();
-        else this.window=new JFrame(conf.title);
+        if (iswindow) {
+            this.window = new JWindow();
+        }
+        else {
+            this.window = new JFrame(conf.title);
+            ((JFrame)window).setResizable(conf.resize);
+        }
         window.setSize(conf.windowW,conf.windowH);
         window.addWindowListener(new WindowListener() {
             @Override
@@ -42,6 +47,7 @@ public class WindowController {
             @Override
             public void windowClosing(WindowEvent e) {
                 if (closeCallBack!=null)closeCallBack.run();
+                if (conf.closingStop)System.exit(0);
             }
 
             @Override
@@ -69,6 +75,7 @@ public class WindowController {
 
             }
         });
+
         setFullSceen(conf.fullSceen);
     }
     //设置配置文件

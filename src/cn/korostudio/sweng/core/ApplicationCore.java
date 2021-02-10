@@ -45,6 +45,7 @@ public class ApplicationCore  {
                 stop();
             }
         });
+        windowController.getWindow().add(application.load());
         start();
     }
     public void start(){

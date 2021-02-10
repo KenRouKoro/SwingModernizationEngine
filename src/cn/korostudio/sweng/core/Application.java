@@ -2,6 +2,8 @@ package cn.korostudio.sweng.core;
 
 import cn.korostudio.sweng.data.Configuration;
 
+import java.awt.*;
+
 abstract public class Application {
     protected ApplicationCore applicationCore;
     protected Application application=this;
@@ -19,7 +21,7 @@ abstract public class Application {
             }
         }).start();
     }
-    abstract public void load();
+    abstract public Component load();
 
     public abstract void stop();
 
