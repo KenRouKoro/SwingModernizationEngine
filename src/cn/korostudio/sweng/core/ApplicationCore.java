@@ -36,8 +36,7 @@ public class ApplicationCore  {
     }
 
     //初始化
-    protected void init(){
-        fxIndi();
+    protected void init(BasePanel basePanel){
         windowController=new WindowController(conf);
         windowController.setCloseCallBack(new CallBack() {
             @Override
@@ -45,7 +44,7 @@ public class ApplicationCore  {
                 stop();
             }
         });
-        windowController.getWindow().add(application.load());
+        windowController.getWindow().add(basePanel);
         start();
     }
     public void start(){
@@ -55,6 +54,6 @@ public class ApplicationCore  {
     public ApplicationCore(Configuration conf,Application application){
         this.conf=conf;
         this.application=application;
-        init();
+        fxIndi();
     }
 }

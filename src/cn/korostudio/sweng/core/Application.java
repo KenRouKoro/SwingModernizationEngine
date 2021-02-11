@@ -7,6 +7,7 @@ import java.awt.*;
 abstract public class Application {
     protected ApplicationCore applicationCore;
     protected Application application=this;
+    protected BasePanel basePanel;
 
     abstract public Configuration init();
 
@@ -16,12 +17,14 @@ abstract public class Application {
             @Override
             public void run() {
                 application.applicationCore=new ApplicationCore(application.init(),application);
-                application.load();
+                application.basePanel =new BasePanel(application.applicationCore.conf);
+                application.applicationCore.init(application.basePanel);
+                application.load(application.basePanel);
 
             }
         }).start();
     }
-    abstract public Component load();
+    abstract public void load(BasePanel basePanel);
 
     public abstract void stop();
 

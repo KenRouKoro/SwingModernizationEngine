@@ -2,6 +2,7 @@ package cn.korostudio.test.main;
 
 
 import cn.korostudio.sweng.core.Application;
+import cn.korostudio.sweng.core.BasePanel;
 import cn.korostudio.sweng.data.Configuration;
 
 import java.awt.*;
@@ -16,9 +17,9 @@ public class Main extends Application {
     }
 
     @Override
-    public Component load() {
+    public void load(BasePanel basePanel) {
         
-        return  null;
+
     }
 
     @Override
