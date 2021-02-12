@@ -13,5 +13,6 @@
     <orderEntry type="library" name="tween-engine-api" level="project" />
     <orderEntry type="library" name="fastjson" level="project" />
     <orderEntry type="library" name="commons-io-2.8.0" level="project" />
+    <orderEntry type="library" name="vlcj" level="project" />
   </component>
 </module>
