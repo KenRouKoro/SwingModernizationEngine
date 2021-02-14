@@ -14,5 +14,6 @@
     <orderEntry type="library" name="fastjson" level="project" />
     <orderEntry type="library" name="commons-io-2.8.0" level="project" />
     <orderEntry type="library" name="vlcj" level="project" />
+    <orderEntry type="library" name="beautyeye_lnf" level="project" />
   </component>
 </module>

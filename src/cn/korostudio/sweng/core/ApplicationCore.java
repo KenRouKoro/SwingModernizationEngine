@@ -74,7 +74,7 @@ public class ApplicationCore  {
     public ApplicationCore(Configuration conf,Application application){
         this.conf=conf;
         this.application=application;
-        fxInit();
-        vlcjInit();
+        if (Application.FXSupport)fxInit();
+        if (Application.VLCSupport)vlcjInit();
     }
 }

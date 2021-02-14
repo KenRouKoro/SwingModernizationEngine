@@ -12,13 +12,14 @@ public class Main extends Application {
     @Override
     public Configuration init() {
         Configuration configuration= new Configuration();
-        configuration.window=true;
+        configuration.window=false;
+        configuration.closingStop=true;
         return configuration;
     }
 
     @Override
     public void load(BasePanel basePanel) {
-        
+        basePanel.setOpaque(true);
 
     }
 

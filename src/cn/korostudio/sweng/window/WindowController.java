@@ -2,6 +2,7 @@ package cn.korostudio.sweng.window;
 
 import cn.korostudio.sweng.data.Configuration;
 import cn.korostudio.sweng.listener.CallBack;
+import com.sun.awt.AWTUtilities;
 
 import javax.swing.*;
 import java.awt.*;
@@ -32,6 +33,7 @@ public class WindowController {
         this.iswindow=conf.window;
         if (iswindow) {
             this.window = new JWindow();
+            ((JWindow)window).setBackground(new Color(255,255,255,0));
         }
         else {
             this.window = new JFrame(conf.title);
@@ -123,6 +125,7 @@ public class WindowController {
     public void show(boolean show){
         this.show=show;
         window.setVisible(show);
+        window.repaint();
     }
 
     public boolean isShow() {
