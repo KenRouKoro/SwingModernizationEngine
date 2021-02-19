@@ -51,6 +51,14 @@ public class ApplicationCore  {
         }
     }
 
+    public WindowController getWindowController() {
+        return windowController;
+    }
+
+    public Application getApplication() {
+        return application;
+    }
+
     protected void stop(){
         application.stop();
     }

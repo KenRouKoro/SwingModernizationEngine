@@ -2,6 +2,7 @@ package cn.korostudio.sweng.core;
 
 import cn.korostudio.sweng.data.Configuration;
 import org.jb2011.lnf.beautyeye.BeautyEyeLNFHelper;
+import org.jb2011.lnf.beautyeye.ch3_button.BEButtonUI;
 
 import javax.swing.*;
 import java.awt.*;
@@ -12,13 +13,19 @@ abstract public class Application {
     protected BasePanel basePanel;
     static public boolean VLCSupport=true;
     static public boolean FXSupport=true;
+    private static boolean beInit=false;
 
     abstract public Configuration init();
 
-    public static void start(Class app) throws Exception{
+    private static void beInit() throws Exception {
+        beInit=true;
         BeautyEyeLNFHelper.frameBorderStyle = BeautyEyeLNFHelper.FrameBorderStyle.translucencySmallShadow;
         org.jb2011.lnf.beautyeye.BeautyEyeLNFHelper.launchBeautyEyeLNF();
         UIManager.put("RootPane.setupButtonVisible", false);
+    }
+
+    public static void start(Class app) throws Exception{
+        if (!beInit)beInit();
         Application application=(Application) app.newInstance();
         new Thread(new Runnable() {
             @Override
@@ -27,6 +34,7 @@ abstract public class Application {
                 application.basePanel =new BasePanel(application.applicationCore.conf);
                 application.applicationCore.init(application.basePanel);
                 application.load(application.basePanel);
+                application.basePanel.repaint();
 
             }
         }).start();

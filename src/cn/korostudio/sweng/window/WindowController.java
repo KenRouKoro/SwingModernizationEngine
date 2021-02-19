@@ -95,6 +95,7 @@ public class WindowController {
     }
     //设置全屏方法
     private void setFullSceen(Window window){
+        if (window!=null)((JFrame)window).getRootPane().setWindowDecorationStyle(JRootPane.NONE);
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         //通过调用GraphicsEnvironment的getDefaultScreenDevice方法获得当前的屏幕设备了
         GraphicsDevice gd = ge.getDefaultScreenDevice();
