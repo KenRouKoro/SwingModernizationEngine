@@ -1,10 +1,10 @@
 package cn.korostudio.test.main;
 
-import cn.korostudio.sweng.core.Application;
-import cn.korostudio.sweng.core.BasePanel;
-import cn.korostudio.sweng.data.Configuration;
-import cn.korostudio.sweng.layout.FormAttachment;
-import cn.korostudio.sweng.layout.FormData;
+import cn.korostudio.jsme.core.Application;
+import cn.korostudio.jsme.core.BasePanel;
+import cn.korostudio.jsme.data.Configuration;
+import cn.korostudio.jsme.layout.FormAttachment;
+import cn.korostudio.jsme.layout.FormData;
 
 import javax.swing.*;
 import java.awt.*;

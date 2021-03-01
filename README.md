@@ -1,4 +1,4 @@
-# Java Swing Engine
+# Java Swing Modernization Engine
 
 `注：该项目仍在初期编写中。`
 
