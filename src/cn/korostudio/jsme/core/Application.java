@@ -12,6 +12,7 @@ abstract public class Application {
     static public boolean VLCSupport=true;
     static public boolean FXSupport=true;
     private static boolean beInit=false;
+    protected static boolean useBE=true;
 
     abstract public Configuration init();
 
@@ -23,7 +24,7 @@ abstract public class Application {
     }
 
     public static void start(Class app) throws Exception{
-        if (!beInit)beInit();
+        if (useBE) if (!beInit)beInit();
         Application application=(Application) app.newInstance();
         new Thread(new Runnable() {
             @Override

@@ -75,6 +75,7 @@ public class ApplicationCore  {
         });
         windowController.getWindow().add(basePanel);
         start();
+        windowController.getWindow().repaint();
     }
     public void start(){
         windowController.show(true);

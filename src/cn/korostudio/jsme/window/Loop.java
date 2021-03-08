@@ -7,4 +7,5 @@ public class Loop {
     public Loop(Configuration conf){
         this.conf=conf;
     }
+
 }
