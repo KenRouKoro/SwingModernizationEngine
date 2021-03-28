@@ -1,6 +1,7 @@
 package cn.korostudio.jsme.window;
 
 import cn.korostudio.jsme.data.Configuration;
+import cn.korostudio.jsme.layout.FormLayout;
 import cn.korostudio.jsme.listener.CallBack;
 
 import javax.swing.*;
@@ -17,6 +18,10 @@ public class WindowController {
 
     public void setCloseCallBack(CallBack closeCallBack) {
         this.closeCallBack = closeCallBack;
+    }
+
+    public void repaint(){
+        window.repaint();
     }
 
     public WindowController(Configuration conf){
@@ -78,6 +83,7 @@ public class WindowController {
         });
 
         setFullSceen(conf.fullSceen);
+        window.setLayout(null);
     }
     //设置配置文件
     public void setConf(Configuration conf){

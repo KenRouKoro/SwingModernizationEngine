@@ -10,7 +10,8 @@ public class BasePanel extends JPanel {
     public BasePanel(Configuration configuration){
         setOpaque(true);
         setBackground(Color.white);
-        setSize(configuration.windowW,configuration.windowH);
+        setBounds(0,0,configuration.windowW,configuration.windowH);
+        //setSize(configuration.windowW,configuration.windowH);
         setLayout(new FormLayout());
 
     }

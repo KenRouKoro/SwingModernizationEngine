@@ -15,6 +15,7 @@ public class Main extends Application {
 
     @Override
     public Configuration init() {
+        useBE=false;
         Configuration configuration= new Configuration();
         configuration.window=false;
         configuration.closingStop=true;
@@ -25,6 +26,7 @@ public class Main extends Application {
 
     @Override
     public void load(BasePanel basePanel) {
+
         basePanel.setBackground(new Color(255,165,0, 128));
         JButton jButton = new JButton("Hello World!");
         FormDatas formData=new FormDatas(0.8f,50,0.8f,200);

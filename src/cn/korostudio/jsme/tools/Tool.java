@@ -5,7 +5,6 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.io.FileUtils;
-
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.font.FontRenderContext;
@@ -274,8 +273,6 @@ public class Tool {
         test.getGraphics().setFont(font);
         FontRenderContext context= ((Graphics2D)test.getGraphics()).getFontRenderContext();
         LineMetrics lineMetrics = font.getLineMetrics(string, context);
-
-
         BufferedImage bufferedImage=new BufferedImage(width, (int) lineMetrics.getHeight(),BufferedImage.TYPE_4BYTE_ABGR);
         Graphics2D g2d =(Graphics2D) bufferedImage.getGraphics();
         g2d.setFont(font);

@@ -24,16 +24,30 @@ abstract public class Application {
     }
 
     public static void start(Class app) throws Exception{
-        if (useBE) if (!beInit)beInit();
+        /*
+        if (useBE){
+            if (!beInit)beInit();
+        }
+        */
         Application application=(Application) app.newInstance();
         new Thread(new Runnable() {
             @Override
             public void run() {
                 application.applicationCore=new ApplicationCore(application.init(),application);
+                if (useBE){
+                    if (!beInit) {
+                        try {
+                            beInit();
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
                 application.basePanel =new BasePanel(application.applicationCore.conf);
                 application.applicationCore.init(application.basePanel);
                 application.load(application.basePanel);
                 application.basePanel.repaint();
+                application.getApplicationCore().getWindowController().repaint();
 
             }
         }).start();
