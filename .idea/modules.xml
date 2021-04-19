@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Java Swing Engine.iml" filepath="$PROJECT_DIR$/Java Swing Engine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java Swing Modernization Engine.iml" filepath="$PROJECT_DIR$/Java Swing Modernization Engine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/physics/physics.iml" filepath="$PROJECT_DIR$/physics/physics.iml" />
       <module fileurl="file://$PROJECT_DIR$/testApp/testApp.iml" filepath="$PROJECT_DIR$/testApp/testApp.iml" />
     </modules>
   </component>
