@@ -6,11 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="testApp" />
         <module name="Java Swing Modernization Engine" />
+        <module name="Engine" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Engine" target="8" />
       <module name="Java Swing Modernization Engine" target="8" />
+      <module name="testApp" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
