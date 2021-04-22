@@ -1,0 +1,191 @@
+2021-04-22 01:58:29.349 INFO  uk.co.caprica.vlcj.Info - vlcj: 3.12.1
+2021-04-22 01:58:29.354 INFO  uk.co.caprica.vlcj.Info - java: 1.8.0_261 Oracle Corporation
+2021-04-22 01:58:29.354 INFO  uk.co.caprica.vlcj.Info - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+2021-04-22 01:58:29.354 INFO  uk.co.caprica.vlcj.Info - os: Windows 10 10.0 amd64
+2021-04-22 01:58:29.948 INFO  uk.co.caprica.vlcj.discovery.NativeDiscovery - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 02:02:45.603] [Thread-1] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 02:02:45.605] [Thread-1] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 02:02:45.606] [Thread-1] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 02:02:45.612] [Thread-1] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 02:02:46.214] [Thread-1] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 02:02:46.476] [Thread-1] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 02:08:37.757] [Thread-1] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 02:08:37.759] [Thread-1] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 02:08:37.759] [Thread-1] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 02:08:37.759] [Thread-1] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 02:08:38.390] [Thread-1] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 02:08:38.435] [Thread-1] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 02:08:38.771] [Thread-1] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 02:10:25.396] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 02:10:25.398] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 02:10:25.398] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 02:10:25.398] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 02:10:26.010] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 02:10:26.046] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 02:10:26.287] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 02:10:41.531] [AWT-EventQueue-0] [INFO ] [cn.korostudio.test.main.Main] - test
+[2021-04-22 02:10:43.706] [AWT-EventQueue-0] [INFO ] [cn.korostudio.test.main.Main] - test
+[2021-04-22 02:10:44.785] [AWT-EventQueue-0] [INFO ] [cn.korostudio.test.main.Main] - test
+[2021-04-22 02:11:18.056] [AWT-EventQueue-0] [INFO ] [cn.korostudio.test.main.Main] - test
+[2021-04-22 02:11:18.591] [AWT-EventQueue-0] [INFO ] [cn.korostudio.test.main.Main] - test
+[2021-04-22 02:11:19.119] [AWT-EventQueue-0] [INFO ] [cn.korostudio.test.main.Main] - test
+[2021-04-22 02:11:19.736] [AWT-EventQueue-0] [INFO ] [cn.korostudio.test.main.Main] - test
+[2021-04-22 02:11:20.269] [AWT-EventQueue-0] [INFO ] [cn.korostudio.test.main.Main] - test
+[2021-04-22 13:54:22.126] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 13:54:22.129] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 13:54:22.129] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 13:54:22.129] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 13:54:22.957] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 13:54:23.029] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 13:54:23.444] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 13:54:32.796] [AWT-EventQueue-0] [INFO ] [cn.korostudio.test.main.Main] - test
+[2021-04-22 13:54:35.878] [AWT-EventQueue-0] [INFO ] [cn.korostudio.test.main.Main] - test
+[2021-04-22 13:54:37.059] [AWT-EventQueue-0] [INFO ] [cn.korostudio.test.main.Main] - test
+[2021-04-22 14:14:25.934] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 14:14:25.941] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 14:14:25.941] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 14:14:25.941] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 14:14:26.859] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 14:14:26.916] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 14:14:27.249] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:15:16.717] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 14:15:16.722] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 14:15:16.723] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 14:15:16.723] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 14:15:17.775] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 14:15:17.828] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 14:15:17.956] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:17:33.454] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 14:17:33.459] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 14:17:33.459] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 14:17:33.460] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 14:17:34.296] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 14:17:34.350] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 14:17:34.684] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:18:07.774] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 14:18:07.780] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 14:18:07.781] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 14:18:07.781] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 14:18:08.726] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 14:18:08.779] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 14:18:08.908] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:19:58.908] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 14:19:58.915] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 14:19:58.916] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 14:19:58.916] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 14:19:59.860] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 14:19:59.907] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 14:20:00.036] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:20:24.491] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 14:20:24.498] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 14:20:24.499] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 14:20:24.499] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 14:20:25.465] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 14:20:25.518] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 14:20:25.668] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:20:58.053] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 14:20:58.059] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 14:20:58.060] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 14:20:58.060] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 14:20:58.963] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 14:20:59.020] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 14:20:59.150] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:22:58.191] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 14:22:58.198] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 14:22:58.199] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 14:22:58.199] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 14:22:59.109] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 14:22:59.157] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 14:22:59.290] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:23:52.257] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 14:23:52.261] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 14:23:52.261] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 14:23:52.261] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 14:23:53.229] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 14:23:53.279] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 14:23:53.409] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:26:33.991] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 14:26:33.994] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 14:26:33.995] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 14:26:33.995] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 14:26:34.947] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 14:26:34.994] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 14:26:35.118] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:26:55.959] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 14:26:55.963] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 14:26:55.964] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 14:26:55.964] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 14:26:56.901] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 14:26:56.951] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 14:26:57.073] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:27:46.959] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 14:27:46.963] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 14:27:46.964] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 14:27:46.964] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 14:27:47.802] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 14:27:47.855] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 14:27:48.209] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:31:22.102] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 14:31:22.109] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 14:31:22.109] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 14:31:22.109] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 14:31:22.983] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 14:31:23.035] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 14:31:23.363] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:32:57.934] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 14:32:57.940] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 14:32:57.940] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 14:32:57.940] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 14:32:58.778] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 14:32:58.832] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 14:32:59.167] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:34:05.486] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 14:34:05.494] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 14:34:05.494] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 14:34:05.495] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 14:34:06.347] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 14:34:06.397] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 14:34:06.728] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:40:12.105] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 14:40:12.111] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 14:40:12.112] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 14:40:12.112] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 14:40:13.070] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 14:40:13.123] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 14:40:13.462] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:44:17.413] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 14:44:17.420] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 14:44:17.420] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 14:44:17.420] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 14:44:18.269] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 14:44:18.317] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 14:44:18.646] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:45:31.507] [AWT-EventQueue-0] [INFO ] [cn.korostudio.test.main.Main] - test
+[2021-04-22 14:45:32.149] [AWT-EventQueue-0] [INFO ] [cn.korostudio.test.main.Main] - test
+[2021-04-22 14:53:55.428] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 14:53:55.433] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 14:53:55.434] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 14:53:55.434] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 14:53:56.263] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 14:53:56.316] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 14:53:56.629] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:53:56.997] [application] [INFO ] [cn.korostudio.jsme.window.WindowController] - WindowController Init Ending.
+[2021-04-22 14:57:57.744] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-22 14:57:57.747] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 1.8.0_261 Oracle Corporation
+[2021-04-22 14:57:57.747] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk1.8.0_261\jre
+[2021-04-22 14:57:57.748] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-22 14:57:58.571] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-22 14:57:58.632] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-22 14:57:58.632] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - VLCJ Init Ending
+[2021-04-22 14:57:58.983] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:57:59.508] [application] [INFO ] [cn.korostudio.jsme.window.WindowController] - WindowController Init Ending.
+[2021-04-22 14:59:36.185] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 14:59:37.285] [application] [INFO ] [cn.korostudio.jsme.window.WindowController] - WindowController Init Ending.
+[2021-04-22 14:59:46.616] [AWT-EventQueue-0] [INFO ] [cn.korostudio.test.main.Main] - test
+[2021-04-22 15:00:54.867] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 15:00:55.857] [application] [INFO ] [cn.korostudio.jsme.window.WindowController] - WindowController Init Ending.
+[2021-04-22 20:39:22.980] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-22 20:39:24.193] [application] [INFO ] [cn.korostudio.jsme.window.WindowController] - WindowController Init Ending.
+[2021-04-22 20:39:27.364] [AWT-EventQueue-0] [INFO ] [cn.korostudio.test.main.Main] - test
+[2021-04-22 20:39:28.141] [AWT-EventQueue-0] [INFO ] [cn.korostudio.test.main.Main] - test
+[2021-04-22 20:39:32.986] [AWT-EventQueue-0] [INFO ] [cn.korostudio.test.main.Main] - test

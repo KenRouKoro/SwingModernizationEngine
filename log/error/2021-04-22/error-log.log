@@ -1,0 +1,73 @@
+2021-04-22 01:58:30.329 ERROR cn.korostudio.jsme.core.Application - Flat is Init.
+[2021-04-22 02:02:45.596] [main] [ERROR] [cn.korostudio.test.main.Main] - test
+[2021-04-22 02:08:37.746] [main] [ERROR] [cn.korostudio.test.main.Main] - test
+[2021-04-22 02:10:25.388] [main] [ERROR] [cn.korostudio.test.main.Main] - test
+[2021-04-22 13:54:22.111] [main] [ERROR] [cn.korostudio.test.main.Main] - test
+[2021-04-22 14:18:10.109] [main] [ERROR] [cn.korostudio.test.main.Main] - java.lang.NullPointerException
+[2021-04-22 14:20:01.593] [main] [ERROR] [cn.korostudio.test.main.Main] - java.lang.NullPointerException
+[2021-04-22 14:20:26.881] [main] [ERROR] [cn.korostudio.test.main.Main] - java.lang.NullPointerException
+[2021-04-22 14:21:00.817] [main] [ERROR] [cn.korostudio.test.main.Main] - java.lang.NullPointerException
+[2021-04-22 14:23:00.514] [main] [ERROR] [cn.korostudio.test.main.Main] - java.lang.NullPointerException
+[2021-04-22 14:23:52.245] [main] [ERROR] [cn.korostudio.test.main.Main] - ClassName:cn.korostudio.test.main.Main
+getFileName:Main.java
+getLineNumber:79
+getMethodName:main
+toString:cn.korostudio.test.main.Main.main(Main.java:79)
+
+[2021-04-22 14:26:33.981] [main] [ERROR] [cn.korostudio.test.main.Main] - error:null
+ClassName:cn.korostudio.test.main.Main
+getFileName:Main.java
+getLineNumber:79
+getMethodName:main
+toString:cn.korostudio.test.main.Main.main(Main.java:79)
+
+[2021-04-22 14:26:55.947] [main] [ERROR] [cn.korostudio.test.main.Main] - error:java.lang.Exception: 未输入文件地址
+ClassName:cn.korostudio.test.main.Main
+getFileName:Main.java
+getLineNumber:79
+getMethodName:main
+toString:cn.korostudio.test.main.Main.main(Main.java:79)
+
+[2021-04-22 14:27:47.965] [main] [ERROR] [cn.korostudio.test.main.Main] - error:java.lang.Exception: 未输入文件地址
+ClassName:cn.korostudio.test.main.Main
+getFileName:Main.java
+getLineNumber:80
+getMethodName:main
+toString:cn.korostudio.test.main.Main.main(Main.java:80)
+
+[2021-04-22 14:31:23.098] [main] [ERROR] [cn.korostudio.test.main.Main] - error:java.lang.Exception: 未输入文件地址
+ClassName:cn.korostudio.test.main.Main
+
+[2021-04-22 14:31:23.099] [main] [ERROR] [cn.korostudio.test.main.Main] - error:java.lang.Exception: 未输入文件地址
+ClassName:cn.korostudio.test.main.Main
+getFileName:Main.java
+
+[2021-04-22 14:31:23.099] [main] [ERROR] [cn.korostudio.test.main.Main] - error:java.lang.Exception: 未输入文件地址
+ClassName:cn.korostudio.test.main.Main
+getFileName:Main.java
+getLineNumber:80
+
+[2021-04-22 14:31:23.099] [main] [ERROR] [cn.korostudio.test.main.Main] - error:java.lang.Exception: 未输入文件地址
+ClassName:cn.korostudio.test.main.Main
+getFileName:Main.java
+getLineNumber:80
+getMethodName:main
+
+[2021-04-22 14:31:23.099] [main] [ERROR] [cn.korostudio.test.main.Main] - error:java.lang.Exception: 未输入文件地址
+ClassName:cn.korostudio.test.main.Main
+getFileName:Main.java
+getLineNumber:80
+getMethodName:main
+toString:cn.korostudio.test.main.Main.main(Main.java:80)
+
+[2021-04-22 14:32:58.933] [main] [ERROR] [cn.korostudio.test.main.Main] - ClassName:cn.korostudio.test.main.Main
+[2021-04-22 14:32:58.934] [main] [ERROR] [cn.korostudio.test.main.Main] - getFileName:Main.java
+[2021-04-22 14:32:58.934] [main] [ERROR] [cn.korostudio.test.main.Main] - getLineNumber:80
+[2021-04-22 14:32:58.934] [main] [ERROR] [cn.korostudio.test.main.Main] - getMethodName:main
+[2021-04-22 14:32:58.934] [main] [ERROR] [cn.korostudio.test.main.Main] - toString:cn.korostudio.test.main.Main.main(Main.java:80)
+[2021-04-22 14:34:06.474] [main] [ERROR] [cn.korostudio.test.main.Main] - Error:java.lang.Exception: 未输入文件地址
+[2021-04-22 14:34:06.475] [main] [ERROR] [cn.korostudio.test.main.Main] - ClassName:cn.korostudio.test.main.Main
+[2021-04-22 14:34:06.475] [main] [ERROR] [cn.korostudio.test.main.Main] - getFileName:Main.java
+[2021-04-22 14:34:06.476] [main] [ERROR] [cn.korostudio.test.main.Main] - getLineNumber:80
+[2021-04-22 14:34:06.476] [main] [ERROR] [cn.korostudio.test.main.Main] - getMethodName:main
+[2021-04-22 14:34:06.476] [main] [ERROR] [cn.korostudio.test.main.Main] - toString:cn.korostudio.test.main.Main.main(Main.java:80)

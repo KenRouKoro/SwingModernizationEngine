@@ -3,11 +3,12 @@ package cn.korostudio.test.main;
 
 import cn.korostudio.jsme.core.Application;
 import cn.korostudio.jsme.core.BasePanel;
+import cn.korostudio.jsme.core.err.Error;
 import cn.korostudio.jsme.data.Configuration;
 import cn.korostudio.jsme.layout.FormDatas;
 import cn.korostudio.test.panel.MainPanel;
-import com.sun.org.slf4j.internal.Logger;
-import com.sun.org.slf4j.internal.LoggerFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 import javax.swing.*;
@@ -27,6 +28,7 @@ public class Main extends Application {
         configuration.fullSeen =false;
         configuration.title="Test";
         configuration.game=true;
+        VLCSupport=false;
         return configuration;
     }
 
@@ -38,7 +40,7 @@ public class Main extends Application {
         jButton.addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                logger.error("test");
+                logger.info("test");
             }
 
             @Override
@@ -75,9 +77,9 @@ public class Main extends Application {
         System.setProperty("sun.java2d.opengl","true");
         try {
             start(Main.class);
+
         } catch (Exception e) {
-            e.printStackTrace();
+            Error.error(Main.class,e);
         }
-        logger.error("test");
     }
 }
