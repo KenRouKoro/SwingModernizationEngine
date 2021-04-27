@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: aurelienribon:universal-tween-engine:6.2-Koro">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/aurelienribon/universal-tween-engine/6.2-Koro/universal-tween-engine-6.2-Koro.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/aurelienribon/universal-tween-engine/6.2-Koro/universal-tween-engine-6.2-Koro-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/aurelienribon/universal-tween-engine/6.2-Koro/universal-tween-engine-6.2-Koro-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
