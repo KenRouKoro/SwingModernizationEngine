@@ -10,31 +10,38 @@ public class Loop {
     protected Configuration conf;
     protected Thread loopThread;
     protected LoopThread loopRunnable;
-    protected boolean empty=true;
-    protected ArrayList<Component>components=new ArrayList<>();
-    protected ArrayList<Frame>frames=new ArrayList<>();
-    private boolean stop=false;
-    public Loop(Configuration conf){
-        this.conf=conf;
-        loopRunnable=new LoopThread();
-        loopThread=new Thread(loopRunnable);
+    protected boolean empty = true;
+    protected ArrayList<Component> components = new ArrayList<>();
+    protected ArrayList<Frame> frames = new ArrayList<>();
+    private boolean stop = false;
+
+    public Loop(Configuration conf) {
+        this.conf = conf;
+        loopRunnable = new LoopThread();
+        loopThread = new Thread(loopRunnable);
     }
-    public void add(Component...components){
+
+    public void add(Component... components) {
         this.components.addAll(Arrays.asList(components));
     }
-    public void add(Frame ...frame){
+
+    public void add(Frame... frame) {
         frames.addAll(Arrays.asList(frame));
     }
-    public void remove(Frame ...frame){
+
+    public void remove(Frame... frame) {
         frames.removeAll(Arrays.asList(frame));
     }
-    public void remove(Component...components){
+
+    public void remove(Component... components) {
         this.components.removeAll(Arrays.asList(components));
     }
-    public void stop(){
-        stop=true;
+
+    public void stop() {
+        stop = true;
     }
-    public void start(){
+
+    public void start() {
         loopThread.start();
     }
 
@@ -42,25 +49,25 @@ public class Loop {
         return empty;
     }
 
-    protected class LoopThread implements Runnable{
+    protected class LoopThread implements Runnable {
         @Override
         public void run() {
-            while (!stop){
-                for (Component component:components){
+            while (!stop) {
+                for (Component component : components) {
                     component.repaint();
-                }for (Frame frame:frames){
+                }
+                for (Frame frame : frames) {
                     frame.repaint();
                 }
                 try {
-                    Thread.sleep(1000/conf.fps);
+                    Thread.sleep(1000 / conf.fps);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
-            stop=false;
+            stop = false;
         }
     }
-
 
 
 }

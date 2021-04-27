@@ -1,17 +1,10 @@
 package cn.korostudio.jsme.tools.video;
 
 
-import javax.swing.*;
-import javax.swing.border.Border;
-import java.awt.*;
-import java.io.File;
-import java.awt.Component;
-import java.awt.event.ComponentEvent;
-import java.awt.event.ComponentListener;
-import uk.co.caprica.vlcj.binding.LibVlc;
 import uk.co.caprica.vlcj.component.EmbeddedMediaPlayerComponent;
-import uk.co.caprica.vlcj.discovery.NativeDiscovery;
 import uk.co.caprica.vlcj.player.MediaPlayer;
+
+import java.awt.*;
 
 public class VideoPlayer {
     protected String file = null;
@@ -28,7 +21,7 @@ public class VideoPlayer {
     }
 
     public MediaPlayer getMediaPlayer() {
-        return (MediaPlayer)this.playerComponent.getMediaPlayer();
+        return (MediaPlayer) this.playerComponent.getMediaPlayer();
     }
 
     public void start() {
@@ -51,13 +44,13 @@ public class VideoPlayer {
 
     public void setFile(String file) {
         this.file = file;
-        String[] opt = { "--subsdec-encoding=GB18030" };
+        String[] opt = {"--subsdec-encoding=GB18030"};
         this.playerComponent.getMediaPlayer().prepareMedia(file, opt);
         //this.playerComponent.setBounds(0, 0, w,h);
     }
 
     public Component backPart() {
-        return (Component)this.playerComponent;
+        return (Component) this.playerComponent;
     }
 }
 /*

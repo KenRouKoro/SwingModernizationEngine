@@ -1,19 +1,13 @@
 package cn.korostudio.jsme.tools.music;
-import cn.korostudio.jsme.listener.CallBack;
-//import javafx.scene.media.Media;
-//import javafx.scene.media.MediaPlayer;
-import java.util.ArrayList;
-import java.util.Arrays;
+
+import cn.korostudio.jsme.core.err.Error;
+import cn.korostudio.jsme.listener.MusicPlayerListener;
+
+import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.DataLine;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.SourceDataLine;
-import javax.sound.sampled.UnsupportedAudioFileException;
-import cn.korostudio.jsme.core.err.Error;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MusicPlayer {
     private String musicPath;
@@ -22,12 +16,27 @@ public class MusicPlayer {
     private AudioInputStream audioStream;
     private AudioFormat audioFormat;
     private SourceDataLine sourceDataLine;
+    private ArrayList<MusicPlayerListener> musicPlayerListeners = new ArrayList<>();
+
+
+    public MusicPlayer() {
+
+    }
+
     public MusicPlayer(String file) {
         this.musicPath = file;
         prefetch();
     }
 
-    public void setfile(String file) {
+    public void addMusicPlayerListener(MusicPlayerListener... musicPlayerListeners) {
+        this.musicPlayerListeners.addAll(Arrays.asList(musicPlayerListeners));
+    }
+
+    public void removeMusicPlayerListener(MusicPlayerListener... musicPlayerListeners) {
+        this.musicPlayerListeners.removeAll(Arrays.asList(musicPlayerListeners));
+    }
+
+    public void setFile(String file) {
         this.musicPath = file;
         prefetch();
     }
@@ -46,7 +55,8 @@ public class MusicPlayer {
     public void stop() {
         (new Thread(new Runnable() {
             public void run() {
-                MusicPlayer.this.stopMusic();
+                MusicPlayer.this.paushMusic();
+                ;
             }
         })).start();
     }
@@ -62,22 +72,23 @@ public class MusicPlayer {
         try {
             this.audioStream = AudioSystem.getAudioInputStream(new File(this.musicPath));
             this.audioFormat = this.audioStream.getFormat();
-            DataLine.Info dataLineInfo = new DataLine.Info(SourceDataLine.class,
-                    this.audioFormat, -1);
-            this.sourceDataLine = (SourceDataLine)AudioSystem.getLine(dataLineInfo);
+            DataLine.Info dataLineInfo = new DataLine.Info(SourceDataLine.class, this.audioFormat, -1);
+            this.sourceDataLine = (SourceDataLine) AudioSystem.getLine(dataLineInfo);
             this.sourceDataLine.open(this.audioFormat);
             this.sourceDataLine.start();
         } catch (UnsupportedAudioFileException | LineUnavailableException | IOException ex) {
-            Error.error(getClass(),ex);
+            Error.error(getClass(), ex);
         }
     }
-
 
 
     private void playMusic() {
         try {
             synchronized (this) {
                 this.run = true;
+                for (MusicPlayerListener listener : musicPlayerListeners) {
+                    listener.play();
+                }
             }
             this.audioStream = AudioSystem.getAudioInputStream(new File(this.musicPath));
             byte[] tempBuff = new byte[1024];
@@ -89,13 +100,16 @@ public class MusicPlayer {
                 }
                 this.sourceDataLine.write(tempBuff, 0, count);
             }
+            for (MusicPlayerListener listener : musicPlayerListeners) {
+                listener.finish();
+            }
         } catch (UnsupportedAudioFileException | IOException | InterruptedException ex) {
             //UnsupportedAudioFileException unsupportedAudioFileException1;
-            Error.error(getClass(),ex);
+            Error.error(getClass(), ex);
         }
     }
 
-    private void stopMusic() {
+    private void paushMusic() {
         synchronized (this) {
             this.run = false;
             notifyAll();

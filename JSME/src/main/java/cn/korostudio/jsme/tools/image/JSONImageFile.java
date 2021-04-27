@@ -8,21 +8,22 @@ public class JSONImageFile {
     @JSONField(name = "name")
     protected String name;
 
-    public JSONImageFile(){}
-
-    public void setFile(String file) {
-        this.file = file;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public JSONImageFile() {
     }
 
     public String getFile() {
         return file;
     }
 
+    public void setFile(String file) {
+        this.file = file;
+    }
+
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

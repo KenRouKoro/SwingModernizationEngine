@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
-    <output url="file://$MODULE_DIR$/../JSME/target/classes" />
-    <output-test url="file://$MODULE_DIR$/../JSME/target/test-classes" />
-    <content url="file://$MODULE_DIR$/../JSME">
-      <sourceFolder url="file://$MODULE_DIR$/../JSME/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../JSME/src/main/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/../JSME/src/test/java" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/../JSME/target" />
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_10">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -15,7 +15,7 @@
     <orderEntry type="module-library">
       <library name="Maven: tweenengine.api:tweenengine-api:6.3">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../JSME/lib/tween-engine-api.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/tween-engine-api.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

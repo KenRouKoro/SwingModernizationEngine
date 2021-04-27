@@ -1,10 +1,12 @@
 package cn.korostudio.jsme.tools;
 
+import cn.korostudio.jsme.core.err.Error;
 import cn.korostudio.jsme.tools.image.JSONImageFile;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.io.FileUtils;
+
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.font.FontRenderContext;
@@ -23,22 +25,25 @@ import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
 public class Tool {
-    public static ArrayList <JSONImageFile> getJSONImageFile(String json){
-        ArrayList <JSONImageFile> arrayList=new ArrayList<>();
-        JSONArray jsonArray=JSONArray.parseArray(json);
-        for(Object obj:jsonArray.toArray()){
-            arrayList.add(JSON.parseObject(((JSONObject)obj).toJSONString(),JSONImageFile.class));
+    public static ArrayList<JSONImageFile> getJSONImageFile(String json) {
+        ArrayList<JSONImageFile> arrayList = new ArrayList<>();
+        JSONArray jsonArray = JSONArray.parseArray(json);
+        for (Object obj : jsonArray.toArray()) {
+            arrayList.add(JSON.parseObject(((JSONObject) obj).toJSONString(), JSONImageFile.class));
         }
         return arrayList;
     }
+
     //获取res文件
-    final static public URI getRes(String file,Class resClass) {
+    final static public URI getRes(String file, Class resClass) {
         try {
             return resClass.getResource(file).toURI();
         } catch (Exception e) {
             return new File(file.substring(1, file.length())).toURI();
         }
     }
+
+    @Deprecated
     static public BufferedImage rotateImage(BufferedImage image, int rotate) {
         BufferedImage bufferedImage = new BufferedImage(image.getWidth(), image.getHeight(), BufferedImage.TYPE_4BYTE_ABGR);
         Graphics2D g2d = (Graphics2D) bufferedImage.getGraphics();
@@ -55,6 +60,16 @@ public class Tool {
         return images;
     }
 
+    //将整个String写入文件
+    static public void saveFile(File file, String str) {
+        try {
+            FileUtils.writeStringToFile(file, str, "utf-8");
+        } catch (IOException e) {
+            Error.error(Tool.class, e);
+        }
+    }
+
+    //直接读取整个文件到String
     static public String readFile(File file) {
         try {
             return FileUtils.readFileToString(file, "utf-8");
@@ -69,6 +84,7 @@ public class Tool {
      * @param packageName 包名
      * @return 类的完整名称
      */
+    @Deprecated
     public static ArrayList<String> getClassName(String packageName) {
         return getClassName(packageName, true);
     }
@@ -80,6 +96,7 @@ public class Tool {
      * @param childPackage 是否遍历子包
      * @return 类的完整名称
      */
+    @Deprecated
     public static ArrayList<String> getClassName(String packageName, boolean childPackage) {
         ArrayList<String> fileNames = null;
         ClassLoader loader = Thread.currentThread().getContextClassLoader();
@@ -227,7 +244,7 @@ public class Tool {
         return bufferedImage;
     }
 
-    static public BufferedImage loadImage(String file,Class resClass) {
+    static public BufferedImage loadImage(String file, Class resClass) {
         try {
             System.out.println("LOAD:" + Paths.get(resClass.getResource(file).toURI()));
         } catch (URISyntaxException e) {
@@ -263,26 +280,28 @@ public class Tool {
         BufferedImage bufferedImage = new BufferedImage(width, height, BufferedImage.TYPE_4BYTE_ABGR);
         Graphics2D g2d = (Graphics2D) bufferedImage.getGraphics();
         g2d.setColor(color);
-        g2d.fillRect(0,0,width,height);
+        g2d.fillRect(0, 0, width, height);
         return bufferedImage;
     }
-    static public BufferedImage stringImage(Color color,Font font,String string){
+
+    static public BufferedImage stringImage(Color color, Font font, String string) {
         int i[] = count(string);
         int width = i[0] * font.getSize() + (i[1] + i[2] + i[3] + i[4] + 1) * font.getSize() / 2;
         BufferedImage test = new BufferedImage(200, 200, BufferedImage.TYPE_4BYTE_ABGR);
         test.getGraphics().setFont(font);
-        FontRenderContext context= ((Graphics2D)test.getGraphics()).getFontRenderContext();
+        FontRenderContext context = ((Graphics2D) test.getGraphics()).getFontRenderContext();
         LineMetrics lineMetrics = font.getLineMetrics(string, context);
-        BufferedImage bufferedImage=new BufferedImage(width, (int) lineMetrics.getHeight(),BufferedImage.TYPE_4BYTE_ABGR);
-        Graphics2D g2d =(Graphics2D) bufferedImage.getGraphics();
+        BufferedImage bufferedImage = new BufferedImage(width, (int) lineMetrics.getHeight(), BufferedImage.TYPE_4BYTE_ABGR);
+        Graphics2D g2d = (Graphics2D) bufferedImage.getGraphics();
         g2d.setFont(font);
         float offset = 0;
         float y = (font.getSize() + lineMetrics.getAscent() - lineMetrics.getDescent() - lineMetrics.getLeading()) / 2;
         g2d.setColor(color);
-        g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING,RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
-        g2d.drawString(string,0,y);
+        g2d.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
+        g2d.drawString(string, 0, y);
         return bufferedImage;
     }
+
     static public int[] count(String str) {
         /*中文字符 */
         int chCharacter = 0;
@@ -301,19 +320,20 @@ public class Tool {
         for (int i = 0; i < str.length(); i++) {
             char tmp = str.charAt(i);
             if ((tmp >= 'A' && tmp <= 'Z') || (tmp >= 'a' && tmp <= 'z')) {
-                enCharacter ++;
+                enCharacter++;
             } else if ((tmp >= '0') && (tmp <= '9')) {
-                numberCharacter ++;
-            } else if (tmp ==' ') {
-                spaceCharacter ++;
+                numberCharacter++;
+            } else if (tmp == ' ') {
+                spaceCharacter++;
             } else if (isChinese(tmp)) {
-                chCharacter ++;
+                chCharacter++;
             } else {
-                otherCharacter ++;
+                otherCharacter++;
             }
         }
         return new int[]{chCharacter, enCharacter, numberCharacter, spaceCharacter, otherCharacter};
     }
+
     static public boolean isChinese(char ch) {
         //获取此字符的UniCodeBlock
         Character.UnicodeBlock ub = Character.UnicodeBlock.of(ch);

@@ -39,17 +39,18 @@ public class ImageLoader {
             System.err.println("WARRING:JSON File Not Found!");
         }
     }
-    static public void removeJSONImage(URI uri){
-        File file=Paths.get(uri).toFile();
+
+    static public void removeJSONImage(URI uri) {
+        File file = Paths.get(uri).toFile();
         String json = "{}";
         try {
-            json= FileUtils.readFileToString(file,"utf-8");
+            json = FileUtils.readFileToString(file, "utf-8");
         } catch (IOException e) {
             e.printStackTrace();
         }
-        JSONArray jsonArray=JSONArray.parseArray(json);
-        for (Object obj:jsonArray.toArray()){
-            JSONObject jsonObject=(JSONObject)obj;
+        JSONArray jsonArray = JSONArray.parseArray(json);
+        for (Object obj : jsonArray.toArray()) {
+            JSONObject jsonObject = (JSONObject) obj;
             ImageBase.remove(jsonObject.getString("name"));
         }
     }

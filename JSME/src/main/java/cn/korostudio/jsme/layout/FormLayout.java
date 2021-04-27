@@ -6,7 +6,7 @@ import java.util.Map;
 
 public final class FormLayout implements LayoutManager2 {
 
-    private final Map<Component, FormData> componentConstraints = new HashMap<Component, FormData>();
+    private final Map<Component, FormData> componentConstraints = new HashMap<>();
 
     public void addLayoutComponent(Component comp, Object constraints) {
         if (constraints == null) {
@@ -76,11 +76,13 @@ public final class FormLayout implements LayoutManager2 {
         }
     }
 
-    public void invalidateLayout(Container target) {}
+    public void invalidateLayout(Container target) {
+    }
 
     public Dimension maximumLayoutSize(Container target) {
         return new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE);
     }
+
     public Dimension minimumLayoutSize(Container target) {
         return new Dimension(0, 0);
     }

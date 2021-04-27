@@ -1,0 +1,13 @@
+[2021-04-26 00:00:25.007] [application] [INFO ] [uk.co.caprica.vlcj.Info] - vlcj: 3.12.1
+[2021-04-26 00:00:25.011] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java: 11.0.10 Oracle Corporation
+[2021-04-26 00:00:25.011] [application] [INFO ] [uk.co.caprica.vlcj.Info] - java home: C:\Program Files\Java\jdk-11.0.10
+[2021-04-26 00:00:25.011] [application] [INFO ] [uk.co.caprica.vlcj.Info] - os: Windows 10 10.0 amd64
+[2021-04-26 00:00:25.265] [application] [INFO ] [uk.co.caprica.vlcj.discovery.NativeDiscovery] - Discovery found libvlc at 'C:\Program Files\VideoLAN\VLC'
+[2021-04-26 00:00:25.324] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - The VLCLib has been discovered automatically.
+[2021-04-26 00:00:25.325] [application] [INFO ] [cn.korostudio.jsme.core.ApplicationCore] - VLCJ Init Ending
+[2021-04-26 00:00:25.707] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-26 00:00:26.274] [application] [INFO ] [cn.korostudio.jsme.window.WindowController] - WindowController Init Ending.
+[2021-04-26 00:06:36.674] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-26 00:06:36.930] [application] [INFO ] [cn.korostudio.jsme.window.WindowController] - WindowController Init Ending.
+[2021-04-26 23:27:06.119] [application] [INFO ] [cn.korostudio.jsme.core.Application] - Flat is Init.
+[2021-04-26 23:27:06.622] [application] [INFO ] [cn.korostudio.jsme.window.WindowController] - WindowController Init Ending.

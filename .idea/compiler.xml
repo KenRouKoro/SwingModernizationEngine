@@ -6,17 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="testApp" />
         <module name="Java Swing Modernization Engine" />
         <module name="JSME" />
-        <module name="Shouhou Pet" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Java Swing Modernization Engine" target="8" />
-      <module name="JSME" target="8" />
-      <module name="Shouhou Pet" target="8" />
+      <module name="JSME" target="10" />
       <module name="Shouhou Table Pet" target="8" />
+      <module name="ShouhouPet" target="8" />
       <module name="testApp" target="8" />
     </bytecodeTargetLevel>
   </component>

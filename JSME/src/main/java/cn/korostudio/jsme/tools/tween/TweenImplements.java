@@ -63,7 +63,6 @@ public class TweenImplements implements TweenAccessor<Component> {
     }
 
 
-
     @Override
     public void setValues(Component target, int tweenType, float[] newValues) {
         switch (tweenType) {
