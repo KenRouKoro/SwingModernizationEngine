@@ -5,31 +5,18 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
-import java.lang.reflect.Field;
 import java.net.URLDecoder;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Vector;
+import java.util.Objects;
 
 public class Starter {
     static final private Logger logger = LoggerFactory.getLogger(Starter.class);
 
     private static ArrayList<Class<?>> findClass() {
-        Field field = null;
-        Vector<Class<?>> classes = null;
         ArrayList<Class<?>> reClasses = new ArrayList<>();
-        try {
-            field = ClassLoader.class.getDeclaredField("classes");
-            field.setAccessible(true);
-            //classes=(Vector<Class<?>>)field.get(ClassLoader.getSystemClassLoader());
-            classes = (Vector<Class<?>>) field.get(ClassLoader.getSystemClassLoader());
-        } catch (NoSuchFieldException | IllegalAccessException e) {
-            logger.error("获取类加载器错误。");
-            Error.error(Starter.class, e);
-        }
-        if (classes != null) reClasses.addAll(classes);
         for (String className : scanAllClasses()) {
             try {
                 reClasses.add(Class.forName(className));
@@ -42,9 +29,9 @@ public class Starter {
     }
 
     private static void runApp(ArrayList<Class<?>> runClass, String[] args) {
-        for (Class cla : runClass) {
+        for (Class<?> cla : runClass) {
             try {
-                cn.korostudio.jsme.core.Application.start(cla, args);
+                cn.korostudio.jsme.core.Application.start(cla, (Object[]) args);
             } catch (Exception e) {
                 logger.error(cla.getName() + "启动失败！");
                 Error.error(cla, e);
@@ -57,7 +44,7 @@ public class Starter {
 
         ArrayList<Class<?>> runClass = new ArrayList<>();
         ArrayList<Class<?>> classes = findClass();
-        for (Class cla : classes) {
+        for (Class<?> cla : classes) {
             logger.debug("正在扫描:" + cla.getName() + "-" + Arrays.toString(cla.getAnnotations()));
             if (cla.getAnnotation(JSMEApplication.class) != null) {
                 runClass.add(cla);
@@ -78,7 +65,7 @@ public class Starter {
     }
 
     private static String getClassPath() {
-        String url = URLDecoder.decode(Starter.class.getResource("/").getPath(), Charset.defaultCharset());
+        String url = URLDecoder.decode(Objects.requireNonNull(Starter.class.getResource("/")).getPath(), Charset.defaultCharset());
         if (url.startsWith("/")) {
             url = url.replaceFirst("/", "");
         }
@@ -99,6 +86,7 @@ public class Starter {
         List<String> ret = new ArrayList<>();
         if (file.isDirectory()) {
             File[] list = file.listFiles();
+            assert list != null;
             for (var i : list) {
                 var j = getAllClass(i);
                 ret.addAll(j);

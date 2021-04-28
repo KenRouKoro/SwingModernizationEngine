@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class MusicPlayer {
+public class MusicPlayer implements AutoCloseable {
     private String musicPath;
     private volatile boolean run = true;
     private Thread mainThread;
@@ -42,30 +42,41 @@ public class MusicPlayer {
     }
 
     public void start(final boolean loop) throws Exception {
-        if (this.musicPath == null)
+        if (this.musicPath == null) {
             throw new Exception("未输入文件地址");
+        }
         this.mainThread = new Thread(new Runnable() {
             public void run() {
                 MusicPlayer.this.playMusic();
             }
-        });
+        }, "StartThread");
         this.mainThread.start();
+    }
+
+    public void pause() {
+        (new Thread(new Runnable() {
+            public void run() {
+                MusicPlayer.this.pauseMusic();
+            }
+        }, "PauseThread")).start();
     }
 
     public void stop() {
         (new Thread(new Runnable() {
             public void run() {
-                MusicPlayer.this.paushMusic();
-                ;
+                MusicPlayer.this.stopMusic();
             }
-        })).start();
+        }, "StopThread")).start();
     }
 
-    protected void finalize() throws Throwable {
-        super.finalize();
-        this.sourceDataLine.drain();
-        this.sourceDataLine.close();
-        this.audioStream.close();
+    private void stopMusic() {
+        synchronized (this) {
+            run = false;
+            notifyAll();
+        }
+        for (MusicPlayerListener listener : musicPlayerListeners) {
+            listener.stop();
+        }
     }
 
     private void prefetch() {
@@ -82,6 +93,7 @@ public class MusicPlayer {
     }
 
 
+
     private void playMusic() {
         try {
             synchronized (this) {
@@ -95,10 +107,11 @@ public class MusicPlayer {
             int count;
             while ((count = this.audioStream.read(tempBuff, 0, tempBuff.length)) != -1) {
                 synchronized (this) {
-                    while (!this.run)
+                    while (!this.run) {
                         wait();
+                    }
+                    this.sourceDataLine.write(tempBuff, 0, count);
                 }
-                this.sourceDataLine.write(tempBuff, 0, count);
             }
             for (MusicPlayerListener listener : musicPlayerListeners) {
                 listener.finish();
@@ -109,26 +122,21 @@ public class MusicPlayer {
         }
     }
 
-    private void paushMusic() {
+    private void pauseMusic() {
         synchronized (this) {
             this.run = false;
             notifyAll();
         }
-    }
-
-    private void continueMusic() {
-        synchronized (this) {
-            this.run = true;
-            notifyAll();
+        for (MusicPlayerListener listener : musicPlayerListeners) {
+            listener.pause();
         }
     }
 
-    public void continues() {
-        (new Thread(new Runnable() {
-            public void run() {
-                MusicPlayer.this.continueMusic();
-            }
-        })).start();
+    @Override
+    public void close() throws Exception {
+        this.sourceDataLine.drain();
+        this.sourceDataLine.close();
+        this.audioStream.close();
     }
 
     //public MusicPlayer() {}

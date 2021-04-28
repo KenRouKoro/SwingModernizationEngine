@@ -18,7 +18,7 @@ abstract public class Application {
     protected BasePanel basePanel;
 
     //flat内部初始化方法
-    private static void flInit() throws Exception {
+    private static void flInit() {
         flInit = true;
         FlatLightLaf.install();
         UIManager.put("Button.arc", 0);
@@ -27,18 +27,18 @@ abstract public class Application {
     }
 
     //标准启动方法
-    public static void start(Class app) throws Exception {
+    public static void start(Class<?> app) throws Exception {
         insideStart(app, (Object) null);
     }
 
     //标准启动方法，带参数
-    public static void start(Class app, Object... sent) throws Exception {
+    public static void start(Class<?> app, Object... sent) throws Exception {
         insideStart(app, sent);
     }
 
     //内部的统一启动方法
-    private static void insideStart(Class app, Object... sent) throws Exception {
-        Application application = (Application) app.newInstance();
+    private static void insideStart(Class<?> app, Object... sent) throws Exception {
+        Application application = (Application) app.getDeclaredConstructor().newInstance();
         logger.info("正在启动：" + application.getName());
         application.sentData(sent);
         Thread running = new Thread(new Runnable() {
